@@ -1,5 +1,5 @@
 #include <iostream>
-#include <cstring>
+#include <string>
 #include <windows.h>
 #include "molarmass.h"
 using namespace std;
@@ -10,7 +10,7 @@ int main()
 
 	int y;
 
-	cout << "Benvenuto in MVA.Science," << endl;
+	cout << "Benvenuto in M.A.V.," << endl;
 	cout << "" << endl;
 	cout << "[1] - Tavola periodica" << endl;
 	cout << "[2] - Conversioni, esercizi" << endl;
@@ -209,7 +209,7 @@ int main()
 			cout << "Temp. ebollizione: 3186 K" << endl;
 			cout << "Densitá: 8900 g/L" << endl;
 		}
-//TODO
+
 		else if (elemento == "Cu")
 		{
 			cout << "- RAME -" << endl;
@@ -344,7 +344,7 @@ int main()
 			cout << "Temp. ebollizione: 942 K" << endl;
 			cout << "Densitá: 1870 g/L" << endl;
 		}
-//TODO
+
 		else if (elemento == "Ba")
 		{
 			cout << "- BARIO -" << endl;
@@ -479,7 +479,7 @@ int main()
 			cout << "Temp. ebollizione: / K" << endl;
 			cout << "Densitá: / g/L" << endl;
 		}
-//TODO
+
 		else if (elemento == "Db")
 		{
 			cout << "- DUBNIO -" << endl;
@@ -614,7 +614,7 @@ int main()
 			cout << "Temp. ebollizione: 4 K" << endl;
 			cout << "Densitá: 0.18 g/L" << endl;
 		}
-//TODO
+
 		else if (elemento == "Al")
 		{
 			cout << "- ALLUMINIO -" << endl;
@@ -1245,8 +1245,12 @@ int main()
 			cout << "Il numero dell'opzione inserito non esiste" << endl;
 			break;
 		}
+
 		}
+
 		break;
+
+	}
 
 	case 3:
 	{
@@ -1259,14 +1263,16 @@ int main()
 		cout << "Massa molare " << form << " : " << getmolarmass(form) << " g/mol" << endl;
 		break;
 	}
+	
 	default:
 	{
 		cout << "" << endl;
 		cout << "Inserisci un numero di opzione giusto" << endl;
 		break;
 	}
+	
 	}
-	}
+	
 
 	cout << "" << endl;
 	system("pause");
